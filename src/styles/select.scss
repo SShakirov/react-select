@@ -1,0 +1,61 @@
+.select {
+  &__input {
+    border-radius: 4px;
+    overflow: hidden;
+    background: white;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 8px 12px;
+    height: 32px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon{
+    width: 10px;
+    height: 6px;
+    color: black;
+    background: url('/down.svg');
+
+    &-active{
+      rotate: 180deg;
+    }
+  }
+
+  &__wrapper{
+    position: relative;
+  }
+}
+
+
+.select-list{
+    box-shadow: 0px 10px 30px 0px #2e3e9a1a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 160px;
+    margin: 4px 0;
+  }
+
+  &__item{
+    border: 2px solid transparent;
+    &:hover{
+      background: #E4EAFF;
+    }
+
+    &-active{
+      border-color: #4971FF;
+
+    }
+  }
+}
